@@ -7,7 +7,7 @@
   |____________________________________|
   |   id                  PK           | 
   |   country_id                       |
-  |   country	                         |
+  |   country	                       |
   |   year                             |
   |   ama_exchange                     |
   |   imf_exchange                     |
