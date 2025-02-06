@@ -18,3 +18,19 @@
   |   inventories_changes              |
   |   construction                     |
   |   exports_gs                       |
+  |   consumption_expenditure          |
+  |   government_expenditure           |
+  |   gross_capital                    |
+  |   gross_fixed                      |
+  |   household_consumption            |
+  |   imports_gs                       |
+  |   manufacturing                    |
+  |   mining_manu_util                 |
+  |   other_activities                 |
+  |   total_added                      |
+  |   transport                        |
+  |   wholesale                        |
+  |   gni                              |
+  |   gdp                              |
+  |____________________________________|
+ 
