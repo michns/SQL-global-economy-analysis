@@ -1,2 +1,20 @@
 -- The SQL investigations ware performed after data cleaning of the aforementioned dataset.
 -- The structure of Global Economy Indicators data after inserting into DBMS:
+
+
+   ____________________________________
+  |   economy                          |
+  |____________________________________|
+  |   id                  PK           | 
+  |   country_id                       |
+  |   country	                         |
+  |   year                             |
+  |   ama_exchange                     |
+  |   imf_exchange                     |
+  |   population                       |
+  |   currency  	                     |
+  |   gni_per_capita                   |
+  |   agriculture_etc                  |
+  |   inventories_changes              |
+  |   construction                     |
+  |   exports_gs                       |
