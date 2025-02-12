@@ -9,8 +9,8 @@
   |   country_id                       |
   |   country	                       |
   |   year                             |
-  |   ama_exchange                     |
-  |   imf_exchange                     |
+  |   ama_exchange                     |          -- AMA exchange rate
+  |   imf_exchange                     |          -- IMF based exchange rate
   |   population                       |
   |   currency  	               |
   |   gni_per_capita                   |
