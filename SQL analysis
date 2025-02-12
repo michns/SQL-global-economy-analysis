@@ -14,7 +14,7 @@
   |   population                       |
   |   currency  	               |
   |   gni_per_capita                   |
-  |   agriculture_etc                  |
+  |   agriculture_etc                  |          --  Agriculture, hunting, forestry, fishing (ISIC A-B) 
   |   inventories_changes              |
   |   construction                     |
   |   exports_gs                       |
