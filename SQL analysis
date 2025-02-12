@@ -17,7 +17,7 @@
   |   agriculture_etc                  |          --  Agriculture, hunting, forestry, fishing (ISIC A-B) 
   |   inventories_changes              |
   |   construction                     |
-  |   exports_gs                       |
+  |   exports_gs                       |          -- Exports of goods and services
   |   consumption_expenditure          |
   |   government_expenditure           |
   |   gross_capital                    |
