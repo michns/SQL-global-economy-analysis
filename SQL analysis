@@ -23,7 +23,7 @@
   |   gross_capital                    |
   |   gross_fixed                      |
   |   household_consumption            |
-  |   imports_gs                       |
+  |   imports_gs                       |          -- Imports of goods and services
   |   manufacturing                    |
   |   mining_manu_util                 |
   |   other_activities                 |
