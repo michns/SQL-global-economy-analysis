@@ -96,3 +96,27 @@ SUM(exports_gs) OVER(PARTITION BY year ORDER BY year)
 AS total_export
 FROM economy WHERE country IN('Brazil','Argentina','Peru')
 AND year BETWEEN 2015 AND 2017 ORDER BY year, country;
+
+
+----------------------------------------------------------------------------------------------
+
+4) Characterize the Gross fixed capital formation of Spain, four years before 
+and four years after the 2008 financial crisis using the cumulative sum.
+
+
+WITH 
+PreCrisis AS (
+SELECT * FROM economy WHERE year BETWEEN 2004 AND 2007
+),
+PostCrisis AS (
+SELECT * FROM economy WHERE year BETWEEN 2009 AND 2012
+)
+SELECT country, year, gross_fixed,
+SUM(gross_fixed) OVER(PARTITION BY country ORDER BY year) 
+AS cumulative_sum, 
+CASE
+	WHEN year IN(2004,2005,2006)
+		THEN 'pre-crisis'
+	WHEN year = 2007
+		THEN 'Total  pre-crisis cumulative sum'
+END
