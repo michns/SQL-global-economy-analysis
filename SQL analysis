@@ -120,3 +120,18 @@ CASE
 	WHEN year = 2007
 		THEN 'Total  pre-crisis cumulative sum'
 END
+AS description
+FROM PreCrisis WHERE country IN('Spain')
+UNION
+SELECT country, year, gross_fixed,
+SUM(gross_fixed) OVER(PARTITION BY country ORDER BY year) 
+AS cumulative_sum, 
+CASE
+	WHEN year IN(2009,2010,2011)
+		THEN 'post-crisis'
+	WHEN year = 2012
+		THEN 'Total  post-crisis cumulative sum'
+END
+AS description
+FROM PostCrisis WHERE country IN('Spain')
+ORDER by year ASC;
