@@ -36,4 +36,18 @@
   |   gni                              |
   |   gdp                              |
   |____________________________________|
- 
+
+----------------------------------------------------------------------------------------
+
+1) Find the average GDP value for the Benelux countries between 1990 - 2000.
+
+WITH 
+bel AS (
+SELECT country,year,gdp FROM economy WHERE country='Belgium'
+),
+net AS (
+SELECT country,year,gdp FROM economy WHERE country='Netherlands'
+),
+lux AS (
+SELECT country,year,gdp FROM economy WHERE country='Luxembourg'
+)
