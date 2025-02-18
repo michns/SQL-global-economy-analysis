@@ -81,3 +81,9 @@ UNION
 SELECT * FROM net
 UNION
 SELECT * FROM lux;
+
+
+----------------------------------------------------------------------------------------------
+
+3) Find export, annual export percentage and total annual export
+for the three largest countries in South America between 2015 - 2017. 
