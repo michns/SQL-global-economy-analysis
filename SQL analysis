@@ -76,3 +76,8 @@ lux AS (
 SELECT TOP (1) row = ROW_Number() OVER (ORDER BY gdp DESC), 
 country,year,gdp FROM economy WHERE country='Luxembourg' AND year BETWEEN 1990 AND 2000
 )
+SELECT * FROM bel
+UNION
+SELECT * FROM net
+UNION
+SELECT * FROM lux;
