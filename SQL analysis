@@ -1,5 +1,8 @@
+-- Dataset:   Global Economy Indicators 
+--            World finance indicators data from 1970-2021
+-- Source: https://www.kaggle.com/datasets/prasad22/global-economy-indicators
 -- The SQL investigations were performed after data cleaning of the aforementioned dataset.
--- The structure of Global Economy Indicators data after inserting into DBMS:
+-- The structure of the Global Economy Indicators data after inserting into DBMS:
 
 
    ____________________________________
