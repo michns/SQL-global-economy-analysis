@@ -37,7 +37,7 @@
   |   gdp                              |
   |____________________________________|
 
-----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------
 
 1) Find the average GDP value for the Benelux countries between 1990 - 2000.
 
@@ -56,3 +56,23 @@ UNION
 SELECT AVG(gdp) AS avg_gdp, 'Netherlands' AS country  FROM net WHERE year BETWEEN 1990 AND 2000
 UNION
 SELECT AVG(gdp) AS avg_gdp, 'Luxembourg' AS country  FROM lux WHERE year BETWEEN 1990 AND 2000;
+
+
+----------------------------------------------------------------------------------------------
+
+2) Find the maximum GDP values along with its corresponding years for the Benelux countries between 1990 - 2000.
+
+
+WITH 
+bel AS (
+SELECT TOP (1) row = ROW_Number() OVER (ORDER BY gdp DESC), 
+country,year,gdp FROM economy WHERE country='Belgium' AND year BETWEEN 1990 AND 2000
+),
+net AS (
+SELECT TOP (1) row = ROW_Number() OVER (ORDER BY gdp DESC), 
+country,year,gdp FROM economy WHERE country='Netherlands' AND year BETWEEN 1990 AND 2000
+),
+lux AS (
+SELECT TOP (1) row = ROW_Number() OVER (ORDER BY gdp DESC), 
+country,year,gdp FROM economy WHERE country='Luxembourg' AND year BETWEEN 1990 AND 2000
+)
