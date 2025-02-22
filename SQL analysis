@@ -23,7 +23,7 @@
   |   exports_gs                       |          -- Exports of goods and services
   |   consumption_expenditure          |
   |   government_expenditure           |          -- General government final consumption expenditure
-  |   gross_capital                    |
+  |   gross_capital                    |          -- Gross capital formation
   |   gross_fixed                      |
   |   household_consumption            |
   |   imports_gs                       |          -- Imports of goods and services
