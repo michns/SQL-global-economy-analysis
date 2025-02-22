@@ -25,7 +25,7 @@
   |   government_expenditure           |          -- General government final consumption expenditure
   |   gross_capital                    |          -- Gross capital formation
   |   gross_fixed                      |          -- Gross fixed capital formation 
-  |   household_consumption            |
+  |   household_consumption            |          -- Household consumption expenditure 
   |   imports_gs                       |          -- Imports of goods and services
   |   manufacturing                    |
   |   mining_manu_util                 |
