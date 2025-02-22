@@ -22,7 +22,7 @@
   |   construction                     |
   |   exports_gs                       |          -- Exports of goods and services
   |   consumption_expenditure          |
-  |   government_expenditure           |
+  |   government_expenditure           |          -- General government final consumption expenditure
   |   gross_capital                    |
   |   gross_fixed                      |
   |   household_consumption            |
