@@ -28,7 +28,7 @@
   |   household_consumption            |          -- Household consumption expenditure 
   |   imports_gs                       |          -- Imports of goods and services
   |   manufacturing                    |          -- Manufacturing (ISIC D)
-  |   mining_manu_util                 |
+  |   mining_manu_util                 |          -- Mining, Manufacturing, Utilities (ISIC C-E)
   |   other_activities                 |
   |   total_added                      |
   |   transport                        |
