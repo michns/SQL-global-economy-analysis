@@ -27,7 +27,7 @@
   |   gross_fixed                      |          -- Gross fixed capital formation 
   |   household_consumption            |          -- Household consumption expenditure 
   |   imports_gs                       |          -- Imports of goods and services
-  |   manufacturing                    |
+  |   manufacturing                    |          -- Manufacturing (ISIC D)
   |   mining_manu_util                 |
   |   other_activities                 |
   |   total_added                      |
