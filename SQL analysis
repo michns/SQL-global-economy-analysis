@@ -29,7 +29,7 @@
   |   imports_gs                       |          -- Imports of goods and services
   |   manufacturing                    |          -- Manufacturing (ISIC D)
   |   mining_manu_util                 |          -- Mining, Manufacturing, Utilities (ISIC C-E)
-  |   other_activities                 |
+  |   other_activities                 |          -- Other Activities (ISIC J-P)
   |   total_added                      |
   |   transport                        |
   |   wholesale                        |
