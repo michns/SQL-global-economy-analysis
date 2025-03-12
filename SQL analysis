@@ -32,7 +32,7 @@
   |   other_activities                 |          -- Other Activities (ISIC J-P)
   |   total_added                      |
   |   transport                        |
-  |   wholesale                        |
+  |   wholesale                        |          -- Wholesale, retail trade, restaurants and hotels (ISIC G-H)
   |   gni                              |          -- Gross National Income(GNI) in USD
   |   gdp                              |          -- Gross Domestic Product (GDP)
   |____________________________________|
