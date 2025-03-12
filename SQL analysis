@@ -33,7 +33,7 @@
   |   total_added                      |
   |   transport                        |
   |   wholesale                        |
-  |   gni                              |
+  |   gni                              |          -- Gross National Income(GNI) in USD
   |   gdp                              |          -- Gross Domestic Product (GDP)
   |____________________________________|
 
