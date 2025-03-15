@@ -30,7 +30,7 @@
   |   manufacturing                    |          -- Manufacturing (ISIC D)
   |   mining_manu_util                 |          -- Mining, Manufacturing, Utilities (ISIC C-E)
   |   other_activities                 |          -- Other Activities (ISIC J-P)
-  |   total_added                      |
+  |   total_added                      |          -- Total Value Added
   |   transport                        |          -- Transport, storage and communication (ISIC I)
   |   wholesale                        |          -- Wholesale, retail trade, restaurants and hotels (ISIC G-H)
   |   gni                              |          -- Gross National Income(GNI) in USD
