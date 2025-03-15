@@ -21,7 +21,7 @@
   |   inventories_changes              |
   |   construction                     |
   |   exports_gs                       |          -- Exports of goods and services
-  |   consumption_expenditure          |
+  |   consumption_expenditure          |          -- Final consumption expenditure
   |   government_expenditure           |          -- General government final consumption expenditure
   |   gross_capital                    |          -- Gross capital formation
   |   gross_fixed                      |          -- Gross fixed capital formation 
