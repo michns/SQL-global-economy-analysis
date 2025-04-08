@@ -140,3 +140,11 @@ ORDER by year ASC;
 
 5) Analyse the relationship between GDP and export of goods and services for Lithuania
 in the years 2009-2019 using Pearson's correlation coefficient.
+
+
+WITH
+    initial_data AS 
+	(
+	SELECT country, year, gdp, exports_gs FROM economy 
+	WHERE country = 'Lithuania' AND year BETWEEN 2009 AND 2019
+	),
