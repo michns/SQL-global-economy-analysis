@@ -135,3 +135,8 @@ END
 AS description
 FROM PostCrisis WHERE country IN('Spain')
 ORDER by year ASC;
+
+----------------------------------------------------------------------------------------------
+
+5) Analyse the relationship between GDP and export of goods and services for Lithuania
+in the years 2009-2019 using Pearson's correlation coefficient.
