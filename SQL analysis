@@ -152,3 +152,7 @@ WITH
 	(
 	SELECT COUNT(country) AS n FROM initial_data
 	),
+	average AS 
+	(
+	SELECT AVG(gdp) AS av_gdp, AVG(exports_gs) AS av_exp FROM initial_data
+	),
