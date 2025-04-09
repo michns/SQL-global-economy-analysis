@@ -177,3 +177,7 @@ variance AS
 	       sum_sqd_dev_exp/(n-1) AS var_exp
 	FROM number_of_rows, squared_dev_sum
 ),
+standard_deviation AS
+(
+	SELECT SQRT(var_gdp) AS std_gdp, SQRT(var_exp) AS std_exp FROM variance
+),
