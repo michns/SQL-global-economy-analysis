@@ -139,7 +139,7 @@ ORDER by year ASC;
 ----------------------------------------------------------------------------------------------
 
 5) Analyse the relationship between GDP and export of goods and services for Lithuania
-in the years 2009-2019 using Pearson's correlation coefficient.
+in the years 2009-2019 using the Pearson's correlation coefficient.
 
 
 WITH
@@ -189,3 +189,7 @@ sum_deviations_multiplied AS
 (
 	SELECT SUM(dev_mul) AS sum_dev_mul FROM deviations_multiplied
 )
+
+SELECT sum_dev_mul/((n-1)*std_gdp*std_exp) 
+AS Pearson_correlation_coefficient  
+FROM sum_deviations_multiplied, number_of_rows, standard_deviation;
