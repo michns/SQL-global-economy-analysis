@@ -156,3 +156,13 @@ average AS
 (
 SELECT AVG(gdp) AS av_gdp, AVG(exports_gs) AS av_exp FROM initial_data
 ),
+deviation AS
+(
+SELECT (gdp - av_gdp) AS dev_gdp, (exports_gs - av_exp) AS dev_exp
+FROM initial_data, average
+),
+squared_deviation AS
+(
+SELECT SQUARE(dev_gdp) AS sqd_dev_gdp, SQUARE(dev_exp) AS sqd_dev_exp
+FROM deviation
+),
