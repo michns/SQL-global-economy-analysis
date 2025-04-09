@@ -181,3 +181,7 @@ standard_deviation AS
 (
 	SELECT SQRT(var_gdp) AS std_gdp, SQRT(var_exp) AS std_exp FROM variance
 ),
+deviations_multiplied AS
+(
+	SELECT CAST(dev_gdp AS REAL) * CAST(dev_exp AS REAL) AS dev_mul FROM deviation
+),
