@@ -185,3 +185,7 @@ deviations_multiplied AS
 (
 	SELECT CAST(dev_gdp AS REAL) * CAST(dev_exp AS REAL) AS dev_mul FROM deviation
 ),
+sum_deviations_multiplied AS
+(
+	SELECT SUM(dev_mul) AS sum_dev_mul FROM deviations_multiplied
+)
