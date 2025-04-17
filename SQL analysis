@@ -93,12 +93,18 @@ SELECT
 	country, 
 	year, 
 	exports_gs,
-100*ROUND(CAST(exports_gs AS REAL)/SUM(CAST(exports_gs AS REAL)) OVER(PARTITION BY year ORDER BY year),2)  
-AS export_percentage,
-SUM(exports_gs) OVER(PARTITION BY year ORDER BY year) 
-AS total_export
-FROM economy WHERE country IN('Brazil','Argentina','Peru')
-AND year BETWEEN 2015 AND 2017 ORDER BY year, country;
+	100*ROUND(CAST(exports_gs AS REAL)/SUM(CAST(exports_gs AS REAL)) OVER(PARTITION BY year ORDER BY year),2)  
+		AS export_percentage,
+	SUM(exports_gs) OVER(PARTITION BY year ORDER BY year) 
+		AS total_export
+FROM 
+	economy 
+WHERE 
+	country IN('Brazil','Argentina','Peru')
+AND 
+	year BETWEEN 2015 AND 2017 
+ORDER BY 
+	year, country;
 
 
 ----------------------------------------------------------------------------------------------
