@@ -89,7 +89,10 @@ SELECT * FROM lux;
 for the three largest countries in South America between 2015 - 2017. 
 
 
-SELECT country, year, exports_gs,
+SELECT 
+	country, 
+	year, 
+	exports_gs,
 100*ROUND(CAST(exports_gs AS REAL)/SUM(CAST(exports_gs AS REAL)) OVER(PARTITION BY year ORDER BY year),2)  
 AS export_percentage,
 SUM(exports_gs) OVER(PARTITION BY year ORDER BY year) 
