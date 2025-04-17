@@ -200,5 +200,6 @@ sum_deviations_multiplied AS
 )
 
 SELECT sum_dev_mul/((n-1)*std_gdp*std_exp) 
-AS Pearson_correlation_coefficient  
-FROM sum_deviations_multiplied, number_of_rows, standard_deviation;
+	AS Pearson_correlation_coefficient  
+FROM 
+	sum_deviations_multiplied, number_of_rows, standard_deviation;
