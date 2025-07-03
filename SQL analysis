@@ -188,7 +188,8 @@ variance AS
 ),
 standard_deviation AS
 (
-	SELECT SQRT(var_gdp) AS std_gdp, SQRT(var_exp) AS std_exp FROM variance
+	SELECT SQRT(var_gdp) AS std_gdp, SQRT(var_exp) AS std_exp 
+	FROM variance
 ),
 deviations_multiplied AS
 (
