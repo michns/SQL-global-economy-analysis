@@ -198,7 +198,8 @@ deviations_multiplied AS
 ),
 sum_deviations_multiplied AS
 (
-	SELECT SUM(dev_mul) AS sum_dev_mul FROM deviations_multiplied
+	SELECT SUM(dev_mul) AS sum_dev_mul 
+	FROM deviations_multiplied
 )
 
 SELECT sum_dev_mul/((n-1)*std_gdp*std_exp) 
